@@ -11,6 +11,8 @@ class Quiz extends StatefulWidget {
 }
 
 class _QuizState extends State<Quiz> {
+  var activeScreen = const StartScreen();
+
   @override
   Widget build(context) {
     return MaterialApp(
