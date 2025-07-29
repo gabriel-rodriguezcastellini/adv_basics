@@ -9,7 +9,7 @@ class ResultsScreen extends StatelessWidget {
   List<Map<String, Object>> getSummaryData() {
     final List<Map<String, Object>> summary = [];
     for (var i = 0; i < chosenAnswers.length; i++) {
-      summary.add({'question_index': i, 'question': questions[i]});
+      summary.add({'question_index': i, 'question': questions[i].text});
     }
     return summary;
   }
