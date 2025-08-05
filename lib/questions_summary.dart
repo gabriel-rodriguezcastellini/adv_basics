@@ -7,6 +7,11 @@ class QuestionsSummary extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return Column(
+      children:
+          summaryData.map((data) {
+            return Row(children: []);
+          }).toList(),
+    );
   }
 }
