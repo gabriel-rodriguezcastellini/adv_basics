@@ -13,7 +13,13 @@ class QuestionsSummary extends StatelessWidget {
             return Row(
               children: [
                 Text(((data['question_index'] as int) + 1).toString()),
-                Column(children: [Text(data['question'] as String)]),
+                Column(
+                  children: [
+                    Text(data['question'] as String),
+                    const SizedBox(height: 5),
+                    Text(),
+                  ],
+                ),
               ],
             );
           }).toList(),
