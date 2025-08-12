@@ -1,4 +1,5 @@
 import 'package:adv_basics/data/questions.dart';
+import 'package:adv_basics/questions_summary.dart';
 import 'package:flutter/material.dart';
 
 class ResultsScreen extends StatelessWidget {
@@ -30,7 +31,7 @@ class ResultsScreen extends StatelessWidget {
           children: [
             Text('You answered X out of Y questions correctly!'),
             SizedBox(height: 30),
-            Text('List of answers and questions...'),
+            QuestionsSummary(getSummaryData()),
             SizedBox(height: 30),
             TextButton(onPressed: () {}, child: Text('Restart Quiz!')),
           ],
